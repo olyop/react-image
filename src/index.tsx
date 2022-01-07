@@ -3,7 +3,8 @@ import { createBEM, BEMInput } from "@oly_op/bem"
 
 import "./index.scss"
 
-const bem = createBEM("Image")
+const bem =
+	createBEM("Image")
 
 const Image: FC<ImagePropTypes> = ({
 	url,
