@@ -1,5 +1,5 @@
 import { createElement, FC } from "react"
-import { createBEM, BEMInput, BEMPropTypes } from "@oly_op/bem"
+import { createBEM, BEMInput } from "@oly_op/bem"
 
 import "./index.scss"
 
@@ -26,9 +26,10 @@ const Image: FC<ImagePropTypes> = ({
 	</div>
 )
 
-export interface ImagePropTypes extends BEMPropTypes {
+export interface ImagePropTypes {
 	url: string,
 	title?: string,
+	className?: BEMInput,
 	imgClassName?: BEMInput,
 	onClick?: () => void | Promise<void>,
 }
